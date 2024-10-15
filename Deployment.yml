@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-app3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-world-app3
+  template:
+    metadata:
+      labels:
+        app: hello-world-app3
+    spec:
+      containers:
+      - name: hello-world-app3
+        image: us-central1-docker.pkg.dev/end-to-end-project-438607/hello-world-repo/hello-world-app3:latest
+        ports:
+        - containerPort: 3002
