@@ -1,0 +1,11 @@
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: hello-world-app3
+spec:
+  virtualhost:
+    fqdn: hello-world-app3.swa-raj.online
+  routes:
+    - services:
+        - name: hello-world-app3
+          port: 80
