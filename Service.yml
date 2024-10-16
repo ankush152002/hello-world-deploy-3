@@ -9,7 +9,7 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 3000
+    targetPort: 3002
     nodePort: 30003  # This is the port that will be opened on the node
 
 
