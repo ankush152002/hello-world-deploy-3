@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-world-app3
-        image: us-central1-docker.pkg.dev/end-to-end-project-438607/node-apps/hello-world-app3:478e079d8056960c2e0fe703572687ac0bbc1dea
+        image: us-central1-docker.pkg.dev/end-to-end-project-438607/node-apps/hello-world-app3:c1096931ee46c0b866db422e31c6398b2bd1bf78
         ports:
         - containerPort: 3002
